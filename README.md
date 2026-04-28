@@ -1,1 +1,2 @@
 # BDLib
+BDLib is opensource modding library for [Building Destruction](https://store.steampowered.com/app/2154730/Building_Destruction/) using [BepInEx](https://github.com/bepinex/bepinex) as mod loader.
