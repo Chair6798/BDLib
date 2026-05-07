@@ -1,11 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
 
+		<!-- Отключаем автоматические global using -->
+		<ImplicitUsings>disable</ImplicitUsings>
+
+		<!-- Устанавливаем совместимую версию языка -->
+		<LangVersion>8.0</LangVersion>
+
+		<!-- Отключаем nullable reference types -->
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\BepInExLibs\0Harmony.dll</HintPath>
@@ -24,21 +30,6 @@
     </Reference>
     <Reference Include="Facepunch.Steamworks.Win64">
       <HintPath>..\GameLibs\Facepunch.Steamworks.Win64.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Protobuf">
-      <HintPath>..\GameLibs\Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="GoogleMobileAds">
-      <HintPath>..\GameLibs\GoogleMobileAds.dll</HintPath>
-    </Reference>
-    <Reference Include="GoogleMobileAds.Common">
-      <HintPath>..\GameLibs\GoogleMobileAds.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="GoogleMobileAds.Core">
-      <HintPath>..\GameLibs\GoogleMobileAds.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="GoogleMobileAds.Ump">
-      <HintPath>..\GameLibs\GoogleMobileAds.Ump.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core">
       <HintPath>..\GameLibs\Grpc.Core.dll</HintPath>
